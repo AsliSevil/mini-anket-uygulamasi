@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="15dp"
+        android:text="Merhaba!\n Giriş Yapınız"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="#1a00c2"
+        android:textSize="26sp" />
+
+
+    <EditText
+        android:id="@+id/nicknameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:hint="Name..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/passwordTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Password..."
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/messageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/girisBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Giris"
+        android:layout_gravity="center"
+        android:onClick="girisYapTikla"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:text="Kayıtlı değil misiniz?"
+            android:textColor="#242424" />
+
+        <Button
+            android:id="@+id/kayitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="Kayıt Ol"
+            android:onClick="kayitOlTikla"/>
+
+    </LinearLayout>
+
+</LinearLayout>
